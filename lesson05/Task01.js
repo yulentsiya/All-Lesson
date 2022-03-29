@@ -5,14 +5,14 @@ const dollarCourse = 73;
 const euroCourse= dollarCourse * 1.2;
 
 
-const calcRubInEuro = (rub) => {
-  const getEuro = rub*euroCourse;
-  return getEuro;
+const calcRubInEuro = (euro) => {
+  const getEuroInRub = euro*euroCourse;
+  return getEuroInRub;
 };
 
-const calcRubInDollar = (rub) => {
-  const getDollar = rub*dollarCourse;
-  return getDollar;
+const calcRubInDollar = (dollar) => {
+  const getDollarInRub = dollar*dollarCourse;
+  return getDollarInRub;
 };
 
 console.log(`Конвертер из руб в евро ${calcRubInEuro(155)}`);
